@@ -7,7 +7,7 @@
 
                 <div class="d-flex justify-content-center dc-footerLinks">
 
-                    <div class="col-8 d-flex">
+                    <div class="col-8 d-flex dc-bigLogo">
 
                         <div class="dc-listContainer">
                             <h5 class="text-uppercase text-light">dc comics</h5>
@@ -110,17 +110,21 @@ export default {
 
 footer {
     min-height: 325px;
+}
+
+.dc-bigLogo {
     background-image: url(../assets/img/dc-logo-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    // background-size: contain;
     background-position: right;
 }
 
 .dc-footerLinks {
 
-    padding: 2rem 0;
-
     .dc-listContainer {
+
+        padding: 2rem 0;
+
         margin-right: 2rem;
 
         h5 {
