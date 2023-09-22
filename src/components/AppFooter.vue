@@ -112,14 +112,15 @@ footer {
     min-height: 325px;
 }
 
-.dc-bigLogo {
-    background-image: url(../assets/img/dc-logo-bg.png);
-    background-repeat: no-repeat;
-    // background-size: contain;
-    background-position: right;
-}
 
 .dc-footerLinks {
+
+    .dc-bigLogo {
+        background-image: url(../assets/img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
 
     .dc-listContainer {
 
