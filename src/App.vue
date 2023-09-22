@@ -1,11 +1,13 @@
 <!-- TEMPLATE -->
 
 <template>
-    <AppHeader></AppHeader>
+    <AppHeader />
 
-    <AppMain></AppMain>
+    <AppMain />
 
-    <AppFooter></AppFooter>
+    <AppMenu />
+
+    <AppFooter />
 </template>
 
 <!-- SCRIPTS -->
@@ -15,13 +17,15 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppMenu from './components/AppMenu.vue';
 
 export default {
 
     components: {
         AppHeader,
         AppMain,
-        AppFooter
+        AppFooter,
+        AppMenu
     }
 }
 </script>

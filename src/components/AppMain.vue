@@ -5,7 +5,11 @@
         <div class="row justify-content-center">
             <main class="col-10 p-0">
 
-                <h3 class="fw-bolder">CONTENT GOES HERE</h3>
+                <div class="d-flex align-items-center dc-conentToDefine">
+                    <h3 class="fw-bolder">CONTENT GOES HERE</h3>
+                </div>
+
+
 
             </main>
         </div>
@@ -29,6 +33,9 @@ export default {
 
 .dc-mainContainer {
     background-color: $dc-tertiary;
+}
+
+.dc-conentToDefine {
     min-height: 90px;
 }
 </style>
