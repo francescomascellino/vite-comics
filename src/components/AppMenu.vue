@@ -3,9 +3,9 @@
 <template>
     <div class="container min-vw-100 dc-menuCont">
         <div class="row justify-content-center">
-            <div class="col-10 p-0">
+            <div class="col-8 p-0">
 
-                <div class="d-flex align-items-center justify-content-evenly dcMenuEl">
+                <div class="d-flex align-items-center justify-content-evenly p-4 dcMenuEl">
 
                     <a href="#" class="text-uppercase m-3"><img src="../assets/img/buy-comics-digital-comics.png"
                             alt=""><span class="ms-4">digital comics</span></a>
@@ -50,8 +50,6 @@ export default {
 }
 
 .dcMenuEl {
-
-    min-height: 90px;
 
     a {
         color: $dc-light;

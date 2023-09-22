@@ -3,7 +3,7 @@
 <template>
     <div class="container min-vw-100 dc-mainContainer">
         <div class="row justify-content-center">
-            <main class="col-10 p-0">
+            <main class="col-8 p-0">
 
                 <div class="d-flex align-items-center dc-conentToDefine">
                     <h3 class="fw-bolder">CONTENT GOES HERE</h3>
@@ -32,10 +32,10 @@ export default {
 @use '../assets/scss/partials/variables.scss' as *;
 
 .dc-mainContainer {
-    background-color: $dc-tertiary;
+    background-color: $dc-dark;
 }
 
 .dc-conentToDefine {
-    min-height: 90px;
+    min-height: 100px;
 }
 </style>

@@ -7,7 +7,7 @@
 
                 <div class="d-flex justify-content-center dc-footerLinks">
 
-                    <div class="col-10 d-flex">
+                    <div class="col-8 d-flex">
 
                         <div>
                             <h5 class="text-uppercase text-light">dc comics</h5>
@@ -66,7 +66,7 @@
 
                 <div class="d-flex justify-content-center dc-contacts">
 
-                    <div class="col-10 d-flex align-items-center justify-content-between">
+                    <div class="col-8 d-flex align-items-center justify-content-between">
 
                         <button class="btn text-uppercase dc-signUpBtn">sign-up now!</button>
 
@@ -112,7 +112,7 @@ export default {
 
     padding: 2rem 0;
 
-    .col-10 {
+    .col-8 {
         div {
             margin-right: 2rem;
 
@@ -122,6 +122,7 @@ export default {
 
             li {
                 font-size: medium;
+                color: $dc-secondary;
             }
         }
     }
@@ -137,7 +138,7 @@ footer {
 
 .dc-contacts {
     padding: 1.5rem 0;
-    background-color: $dc-secondary;
+    background-color: $dc-tertiary;
 }
 
 .dc-signUpBtn {
