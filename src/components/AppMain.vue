@@ -1,13 +1,11 @@
 <!-- TEMPLATE -->
 
 <template>
-    <div class="container min-vw-100">
-        <div class="row">
-            <main class="d-flex">
+    <div class="container min-vw-100 dc-mainContainer">
+        <div class="row justify-content-center">
+            <main class="col-10">
 
-                <div class="col d-flex align-items-center">
-                    <h3 class="fw-bolder">CONTENT GOES HERE</h3>
-                </div>
+                <h3 class="fw-bolder">CONTENT GOES HERE</h3>
 
             </main>
         </div>
@@ -27,7 +25,7 @@ export default {
 <!-- STYLE -->
 
 <style lang="scss" scoped>
-main {
+.dc-mainContainer {
     background-color: darkgray;
     min-height: 90px;
 }
