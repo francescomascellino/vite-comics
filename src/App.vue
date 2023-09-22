@@ -1,34 +1,35 @@
+<!-- TEMPLATE -->
+
 <template>
     <div class="container">
 
         <AppHeader></AppHeader>
 
-        <div>
+        <AppMain></AppMain>
 
-            <div class="row">
-                <h1 class="text-danger text-center">APP</h1>
-            </div>
-
-
-
-        </div>
     </div>
 </template>
+
+<!-- SCRIPTS -->
 
 <script>
 
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 
 export default {
 
     components: {
-        AppHeader
+        AppHeader,
+        AppMain
     }
 }
 </script>
 
+<!-- STYLE -->
+
 <style lang="scss" scoped>
-div {
+* {
     border: 1px solid red;
 }
 </style>

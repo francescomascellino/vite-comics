@@ -1,3 +1,5 @@
+<!-- TEMPLATE -->
+
 <template>
     <nav class="navbar py-3 navbar-expand-lg">
 
@@ -39,19 +41,20 @@
             <!-- </div> -->
         </div>
     </nav>
-
-
-    <!-- <div class="header">
-        <h1 class="text-danger text-center">HEADER</h1>
-    </div> -->
 </template>
 
+<!-- EXPORT & SCRIPTS -->
+
 <script>
+
 export default {
     name: "AppHeader"
 
 }
+
 </script>
+
+<!-- STYLE -->
 
 <style lang="scss" scoped>
 .navbar-nav a.nav-link {
