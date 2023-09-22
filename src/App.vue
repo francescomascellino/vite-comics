@@ -1,7 +1,17 @@
 <template>
-    <AppHeader></AppHeader>
-    <div>
-        <h1 class="text-danger text-center">APP</h1>
+    <div class="container">
+
+        <AppHeader></AppHeader>
+
+        <div>
+
+            <div class="row">
+                <h1 class="text-danger text-center">APP</h1>
+            </div>
+
+
+
+        </div>
     </div>
 </template>
 
@@ -19,6 +29,6 @@ export default {
 
 <style lang="scss" scoped>
 div {
-    background-color: azure;
+    border: 1px solid red;
 }
 </style>
