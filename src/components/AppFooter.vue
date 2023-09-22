@@ -13,20 +13,20 @@
                             <h5 class="text-uppercase text-light">dc comics</h5>
 
                             <ol class="list-unstyled text-light">
-                                <li class="text-capitalize">Character</li>
-                                <li class="text-capitalize">Comics</li>
-                                <li class="text-capitalize">Movies</li>
-                                <li class="text-capitalize">TV</li>
-                                <li class="text-capitalize">Games</li>
-                                <li class="text-capitalize">Videos</li>
-                                <li class="text-capitalize">News</li>
+                                <li class="text-capitalize"><a href="#">Character</a></li>
+                                <li class="text-capitalize"><a href="#">Comics</a></li>
+                                <li class="text-capitalize"><a href="#">Movies</a></li>
+                                <li class="text-capitalize"><a href="#">TV</a></li>
+                                <li class="text-capitalize"><a href="#">Games</a></li>
+                                <li class="text-capitalize"><a href="#">Videos</a></li>
+                                <li class="text-capitalize"><a href="#">News</a></li>
                             </ol>
 
                             <h5 class="text-uppercase text-light">shop</h5>
 
                             <ol class="list-unstyled text-light">
-                                <li class="text-capitalize">Shop DC</li>
-                                <li class="text-capitalize">Shop DC Collectibles</li>
+                                <li class="text-capitalize"><a href="#">Shop DC</a></li>
+                                <li class="text-capitalize"><a href="#">Shop DC Collectibles</a></li>
                             </ol>
                         </div>
 
@@ -34,17 +34,17 @@
                             <h5 class="text-uppercase text-light">dc</h5>
 
                             <ol class="list-unstyled text-light">
-                                <li class="text-capitalize">terms of use</li>
-                                <li class="text-capitalize">privacy policy</li>
-                                <li class="text-capitalize">ad choices</li>
-                                <li class="text-capitalize">advertising</li>
-                                <li class="text-capitalize">jobs</li>
-                                <li class="text-capitalize">subscriptions</li>
-                                <li class="text-capitalize">talent workshops</li>
-                                <li class="text-capitalize">CPSC certificates</li>
-                                <li class="text-capitalize">ratings</li>
-                                <li class="text-capitalize">shop help</li>
-                                <li class="text-capitalize">contact us</li>
+                                <li class="text-capitalize"><a href="#">terms of use</a></li>
+                                <li class="text-capitalize"><a href="#">privacy policy</a></li>
+                                <li class="text-capitalize"><a href="#">ad choices</a></li>
+                                <li class="text-capitalize"><a href="#">advertising</a></li>
+                                <li class="text-capitalize"><a href="#">jobs</a></li>
+                                <li class="text-capitalize"><a href="#">subscriptions</a></li>
+                                <li class="text-capitalize"><a href="#">talent workshops</a></li>
+                                <li class="text-capitalize"><a href="#">CPSC certificates</a></li>
+                                <li class="text-capitalize"><a href="#">ratings</a></li>
+                                <li class="text-capitalize"><a href="#">shop help</a></li>
+                                <li class="text-capitalize"><a href="#">contact us</a></li>
                             </ol>
                         </div>
 
@@ -52,11 +52,11 @@
                             <h5 class="text-uppercase text-light">sites</h5>
 
                             <ol class="list-unstyled text-light">
-                                <li class="text-capitalize">dc</li>
-                                <li class="text-capitalize">MAD magazine</li>
-                                <li class="text-capitalize">dc kids</li>
-                                <li class="text-capitalize">dc universe</li>
-                                <li class="text-capitalize">dc power visa</li>
+                                <li class="text-capitalize"><a href="#">dc</a></li>
+                                <li class="text-capitalize"><a href="#">MAD magazine</a></li>
+                                <li class="text-capitalize"><a href="#">dc kids</a></li>
+                                <li class="text-capitalize"><a href="#">dc universe</a></li>
+                                <li class="text-capitalize"><a href="#">dc power visa</a></li>
                             </ol>
                         </div>
 
@@ -132,9 +132,14 @@ footer {
             font-weight: bold;
         }
 
-        li {
+        li a {
             font-size: medium;
+            text-decoration: none;
             color: $dc-secondary;
+
+            &:hover {
+                color: $dc-info;
+            }
         }
     }
 

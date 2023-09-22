@@ -56,13 +56,10 @@ export default {
     color: $dc-secondary;
     border-bottom: 5px solid transparent;
 
+    &:hover {
+        color: $dc-info;
+        border-bottom: 5px solid $dc-info;
+    }
 
-
-}
-
-// QUESTA REGOLA SI PUO' INNESTARE SOPRA?
-.navbar-nav a.nav-link:hover {
-    color: $dc-info;
-    border-bottom: 5px solid $dc-info;
 }
 </style>
