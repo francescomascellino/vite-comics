@@ -1,11 +1,5 @@
 @use '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
-#app {
-    //width: 100vw !important; //APP NON SI ALLARGA DEL TUTTO
-    min-width: 1200px; //APP NON SI ALLARGA DEL TUTTO
-    height: 100vh;
-}
-
 .container {
-    height: 100%;
+    border: 1px dotted blue;
 }

@@ -1,13 +1,18 @@
 <!-- TEMPLATE -->
 
 <template>
-    <main class="row">
+    <div class="container min-vw-100">
+        <div class="row">
+            <main class="d-flex">
 
-        <div class="col d-flex align-items-center">
-            <h3 class="fw-bolder">CONTENT GOES HERE</h3>
+                <div class="col d-flex align-items-center">
+                    <h3 class="fw-bolder">CONTENT GOES HERE</h3>
+                </div>
+
+            </main>
         </div>
 
-    </main>
+    </div>
 </template>
 
 <!-- EXPORT & SCRIPTS -->

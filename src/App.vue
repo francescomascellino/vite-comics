@@ -1,13 +1,11 @@
 <!-- TEMPLATE -->
 
 <template>
-    <div class="container">
+    <AppHeader></AppHeader>
 
-        <AppHeader></AppHeader>
+    <AppMain></AppMain>
 
-        <AppMain></AppMain>
-
-    </div>
+    <AppFooter></AppFooter>
 </template>
 
 <!-- SCRIPTS -->
@@ -16,20 +14,18 @@
 
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
 
     components: {
         AppHeader,
-        AppMain
+        AppMain,
+        AppFooter
     }
 }
 </script>
 
 <!-- STYLE -->
 
-<style lang="scss" scoped>
-* {
-    border: 1px solid red;
-}
-</style>
+<style lang="scss" scoped></style>

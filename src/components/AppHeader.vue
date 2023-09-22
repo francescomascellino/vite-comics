@@ -1,7 +1,7 @@
 <!-- TEMPLATE -->
 
 <template>
-    <nav class="navbar py-3 navbar-expand-lg">
+    <nav class="navbar py-0 navbar-expand-lg">
 
         <div class="container-fluid">
 
