@@ -1,7 +1,9 @@
 <!-- TEMPLATE -->
 <template>
     <div class="container min-vw-100 dc-menuCont">
+
         <div class="row justify-content-center">
+
             <div class="col-8 p-0">
 
                 <div class="d-flex align-items-center justify-content-evenly p-4 dcMenuEl">
@@ -24,6 +26,7 @@
                 </div>
 
             </div>
+
         </div>
 
     </div>

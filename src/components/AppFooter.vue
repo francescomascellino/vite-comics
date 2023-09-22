@@ -11,6 +11,7 @@
                     <div class="col-8 d-flex dc-bigLogo">
 
                         <div class="dc-listContainer">
+
                             <h5 class="text-uppercase text-light">dc comics</h5>
 
                             <ol class="list-unstyled text-light">
@@ -29,9 +30,11 @@
                                 <li class="text-capitalize"><a href="#">Shop DC</a></li>
                                 <li class="text-capitalize"><a href="#">Shop DC Collectibles</a></li>
                             </ol>
+
                         </div>
 
                         <div class="dc-listContainer">
+
                             <h5 class="text-uppercase text-light">dc</h5>
 
                             <ol class="list-unstyled text-light">
@@ -47,9 +50,11 @@
                                 <li class="text-capitalize"><a href="#">shop help</a></li>
                                 <li class="text-capitalize"><a href="#">contact us</a></li>
                             </ol>
+
                         </div>
 
                         <div class="dc-listContainer">
+
                             <h5 class="text-uppercase text-light">sites</h5>
 
                             <ol class="list-unstyled text-light">
@@ -59,6 +64,7 @@
                                 <li class="text-capitalize"><a href="#">dc universe</a></li>
                                 <li class="text-capitalize"><a href="#">dc power visa</a></li>
                             </ol>
+
                         </div>
 
                     </div>
@@ -74,6 +80,7 @@
                         <div class="d-flex align-items-center dc-followCont">
 
                             <h4 class="text-uppercase m-0">follow us</h4>
+
                             <a href="#" class="ms-3"><img src="../assets/img/footer-facebook.png" alt=""></a>
                             <a href="#" class="ms-3"><img src="../assets/img/footer-twitter.png" alt=""></a>
                             <a href="#" class="ms-3"><img src="../assets/img/footer-youtube.png" alt=""></a>

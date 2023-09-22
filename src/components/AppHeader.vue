@@ -1,8 +1,11 @@
 <!-- TEMPLATE -->
 <template>
     <div class="container min-vw-100">
+
         <div class="row justify-content-center">
+
             <div class="col-8 p-0">
+
                 <nav class="navbar navbar-expand-lg py-0">
 
                     <a class="navbar-brand flex-grow-1" href="#"><img src="../assets/img/dc-logo.png" alt=""></a>
@@ -28,9 +31,13 @@
                         <a class="nav-link px-4 py-5" href="#">Shop</a>
 
                     </div>
+
                 </nav>
+
             </div>
+
         </div>
+
     </div>
 </template>
 

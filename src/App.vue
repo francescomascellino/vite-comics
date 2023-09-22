@@ -1,5 +1,4 @@
 <!-- TEMPLATE -->
-
 <template>
     <AppHeader />
 
@@ -11,7 +10,6 @@
 </template>
 
 <!-- SCRIPTS -->
-
 <script>
 
 import AppHeader from './components/AppHeader.vue';
@@ -31,5 +29,4 @@ export default {
 </script>
 
 <!-- STYLE -->
-
 <style lang="scss" scoped></style>
