@@ -1,1 +1,17 @@
+// BOOTSTRAP LINK
 @use '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// VARIABLES LINK
+@use './partials/variables.scss' as *;
+
+
+// .col-10 {
+//     border: 1px solid $dc-info;
+// }
+
+h1,
+h2,
+h3,
+li {
+    color: $dc-light;
+}

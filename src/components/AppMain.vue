@@ -3,7 +3,7 @@
 <template>
     <div class="container min-vw-100 dc-mainContainer">
         <div class="row justify-content-center">
-            <main class="col-10">
+            <main class="col-10 p-0">
 
                 <h3 class="fw-bolder">CONTENT GOES HERE</h3>
 
@@ -18,15 +18,17 @@
 <script>
 export default {
     name: "AppMain"
-
 }
 </script>
 
 <!-- STYLE -->
 
 <style lang="scss" scoped>
+// VARIABLES LINK
+@use '../assets/scss/partials/variables.scss' as *;
+
 .dc-mainContainer {
-    background-color: darkgray;
+    background-color: $dc-tertiary;
     min-height: 90px;
 }
 </style>

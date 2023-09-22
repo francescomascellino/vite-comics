@@ -3,10 +3,10 @@
 <template>
     <div class="container min-vw-100">
         <div class="row justify-content-center">
-            <div class="col-10">
-                <nav class="navbar py-0 navbar-expand-lg">
+            <div class="col-10 p-0">
+                <nav class="navbar navbar-expand-lg py-0">
 
-                    <a class="navbar-brand" href="#"><img src="../assets/img/dc-logo.png" alt=""></a>
+                    <a class="navbar-brand flex-grow-1" href="#"><img src="../assets/img/dc-logo.png" alt=""></a>
 
                     <div class="navbar-nav d-flex justify-content-between text-uppercase">
 
@@ -41,7 +41,6 @@
 
 export default {
     name: "AppHeader"
-
 }
 
 </script>
@@ -49,13 +48,18 @@ export default {
 <!-- STYLE -->
 
 <style lang="scss" scoped>
+// VARIABLES LINK
+@use '../assets/scss/partials/variables.scss' as *;
+
 .navbar-nav a.nav-link {
     font-weight: bold;
+    color: $dc-secondary;
     border-bottom: 5px solid transparent;
 }
 
 // QUESTA REGOLA SI PUO' INNESTARE SOPRA?
 .navbar-nav a.nav-link:hover {
-    border-bottom: 5px solid blue;
+    color: $dc-info;
+    border-bottom: 5px solid $dc-info;
 }
 </style>
