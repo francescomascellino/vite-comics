@@ -1,5 +1,4 @@
 <!-- TEMPLATE -->
-
 <template>
     <div class="container min-vw-100 dc-mainContainer">
         <div class="row justify-content-center">
@@ -18,7 +17,6 @@
 </template>
 
 <!-- EXPORT & SCRIPTS -->
-
 <script>
 export default {
     name: "AppMain"
@@ -26,16 +24,7 @@ export default {
 </script>
 
 <!-- STYLE -->
-
 <style lang="scss" scoped>
-// VARIABLES LINK
-@use '../assets/scss/partials/variables.scss' as *;
-
-.dc-mainContainer {
-    background-color: $dc-dark;
-}
-
-.dc-conentToDefine {
-    min-height: 100px;
-}
+// STYLESHEET LINK
+@use '../assets/scss/partials/AppMain.scss';
 </style>

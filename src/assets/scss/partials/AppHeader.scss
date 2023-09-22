@@ -1,0 +1,12 @@
+@use './variables.scss' as *;
+
+.navbar-nav a.nav-link {
+    font-weight: bold;
+    color: $dc-secondary;
+    border-bottom: 5px solid transparent;
+
+    &:hover {
+        color: $dc-info;
+        border-bottom: 5px solid $dc-info;
+    }
+}

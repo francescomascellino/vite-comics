@@ -1,5 +1,4 @@
 <!-- TEMPLATE -->
-
 <template>
     <div class="container min-vw-100 dc-menuCont">
         <div class="row justify-content-center">
@@ -31,7 +30,6 @@
 </template>
 
 <!-- EXPORT & SCRIPTS -->
-
 <script>
 export default {
     name: "AppMenu"
@@ -39,27 +37,7 @@ export default {
 </script>
 
 <!-- STYLE -->
-
 <style lang="scss" scoped>
-// VARIABLES LINK
-@use '../assets/scss/partials/variables.scss' as *;
-
-.dc-menuCont {
-    background-color: $dc-info;
-
-}
-
-.dcMenuEl {
-
-    a {
-        color: $dc-light;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: small;
-
-        img {
-            height: 45px;
-        }
-    }
-}
+// STYLESHEET LINK
+@use '../assets/scss/partials/AppMenu.scss' as *;
 </style>

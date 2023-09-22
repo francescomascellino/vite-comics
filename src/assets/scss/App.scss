@@ -4,11 +4,16 @@
 // VARIABLES LINK
 @use './partials/variables.scss' as *;
 
+//COMPONENT STYLE LINK
+@use './partials/AppHeader.scss' as *;
 
-// .col-10 {
-//     border: 1px solid $dc-info;
-// }
+@use './partials/AppMain.scss' as *;
 
+@use './partials/AppMenu.scss' as *;
+
+@use './partials/AppFooter.scss' as *;
+
+// GENERAL RULES
 h1,
 h2,
 h3,

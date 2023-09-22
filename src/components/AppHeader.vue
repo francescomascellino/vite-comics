@@ -1,5 +1,4 @@
 <!-- TEMPLATE -->
-
 <template>
     <div class="container min-vw-100">
         <div class="row justify-content-center">
@@ -36,7 +35,6 @@
 </template>
 
 <!-- EXPORT & SCRIPTS -->
-
 <script>
 
 export default {
@@ -46,20 +44,7 @@ export default {
 </script>
 
 <!-- STYLE -->
-
 <style lang="scss" scoped>
-// VARIABLES LINK
-@use '../assets/scss/partials/variables.scss' as *;
-
-.navbar-nav a.nav-link {
-    font-weight: bold;
-    color: $dc-secondary;
-    border-bottom: 5px solid transparent;
-
-    &:hover {
-        color: $dc-info;
-        border-bottom: 5px solid $dc-info;
-    }
-
-}
+// STYLESHEET LINK
+@use '../assets/scss/partials/AppHeader.scss' as *;
 </style>

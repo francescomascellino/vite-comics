@@ -1,0 +1,19 @@
+@use './variables.scss' as *;
+
+.dc-menuCont {
+    background-color: $dc-info;
+
+}
+
+.dcMenuEl {
+    a {
+        color: $dc-light;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: small;
+
+        img {
+            height: 45px;
+        }
+    }
+}

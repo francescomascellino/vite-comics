@@ -1,3 +1,4 @@
+<!-- TEMPLATE -->
 <template>
     <div class="container min-vw-100">
 
@@ -92,75 +93,15 @@
     </div>
 </template>
 
+<!-- EXPORT & SCRIPTS -->
 <script>
 export default {
     name: "AppFooter"
 }
 </script>
 
+<!-- STYLE -->
 <style lang="scss" scoped>
-// VARIABLES LINK
-@use '../assets/scss/partials/variables.scss' as *;
-
-.dc-footerCont {
-    background-image: url("../assets/img/footer-bg.jpg");
-    background-size: cover;
-
-}
-
-footer {
-    min-height: 325px;
-}
-
-
-.dc-footerLinks {
-
-    .dc-bigLogo {
-        background-image: url(../assets/img/dc-logo-bg.png);
-        background-repeat: no-repeat;
-        background-position: right;
-    }
-
-
-    .dc-listContainer {
-
-        padding: 2rem 0;
-
-        margin-right: 2rem;
-
-        h5 {
-            font-weight: bold;
-        }
-
-        li a {
-            font-size: medium;
-            text-decoration: none;
-            color: $dc-secondary;
-
-            &:hover {
-                color: $dc-info;
-            }
-        }
-    }
-
-}
-
-.dc-contacts {
-    padding: 1.5rem 0;
-    background-color: $dc-tertiary;
-
-    .dc-signUpBtn {
-        border: 3px solid $dc-info;
-        border-radius: 0;
-        padding: 0.7rem 0.8rem;
-        font-weight: bold;
-        color: white;
-    }
-
-    h4 {
-        color: $dc-info;
-        font-weight: bold;
-    }
-
-}
+// STYLESHEET LINK
+@use '../assets/scss/partials/AppFooter.scss' as *;
 </style>

@@ -1,0 +1,9 @@
+@use './variables.scss' as *;
+
+.dc-mainContainer {
+    background-color: $dc-dark;
+}
+
+.dc-conentToDefine {
+    min-height: 100px;
+}
