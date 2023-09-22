@@ -55,6 +55,9 @@ export default {
     font-weight: bold;
     color: $dc-secondary;
     border-bottom: 5px solid transparent;
+
+
+
 }
 
 // QUESTA REGOLA SI PUO' INNESTARE SOPRA?

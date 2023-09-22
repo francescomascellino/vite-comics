@@ -9,7 +9,7 @@
 
                     <div class="col-8 d-flex">
 
-                        <div>
+                        <div class="dc-listContainer">
                             <h5 class="text-uppercase text-light">dc comics</h5>
 
                             <ol class="list-unstyled text-light">
@@ -30,7 +30,7 @@
                             </ol>
                         </div>
 
-                        <div>
+                        <div class="dc-listContainer">
                             <h5 class="text-uppercase text-light">dc</h5>
 
                             <ol class="list-unstyled text-light">
@@ -48,7 +48,7 @@
                             </ol>
                         </div>
 
-                        <div>
+                        <div class="dc-listContainer">
                             <h5 class="text-uppercase text-light">sites</h5>
 
                             <ol class="list-unstyled text-light">
@@ -108,26 +108,6 @@ export default {
 
 }
 
-.dc-footerLinks {
-
-    padding: 2rem 0;
-
-    .col-8 {
-        div {
-            margin-right: 2rem;
-
-            h5 {
-                font-weight: bold;
-            }
-
-            li {
-                font-size: medium;
-                color: $dc-secondary;
-            }
-        }
-    }
-}
-
 footer {
     min-height: 325px;
     background-image: url(../assets/img/dc-logo-bg.png);
@@ -136,21 +116,41 @@ footer {
     background-position: right;
 }
 
+.dc-footerLinks {
+
+    padding: 2rem 0;
+
+    .dc-listContainer {
+        margin-right: 2rem;
+
+        h5 {
+            font-weight: bold;
+        }
+
+        li {
+            font-size: medium;
+            color: $dc-secondary;
+        }
+    }
+
+}
+
 .dc-contacts {
     padding: 1.5rem 0;
     background-color: $dc-tertiary;
-}
 
-.dc-signUpBtn {
-    border: 3px solid $dc-info;
-    border-radius: 0;
-    padding: 0.7rem 0.8rem;
-    font-weight: bold;
-    color: white;
-}
+    .dc-signUpBtn {
+        border: 3px solid $dc-info;
+        border-radius: 0;
+        padding: 0.7rem 0.8rem;
+        font-weight: bold;
+        color: white;
+    }
 
-h4 {
-    color: $dc-info;
-    font-weight: bold;
+    h4 {
+        color: $dc-info;
+        font-weight: bold;
+    }
+
 }
 </style>
