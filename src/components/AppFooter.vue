@@ -1,11 +1,15 @@
 <template>
     <div class="container min-vw-100">
 
-        <div class="row dc-footerCont">
+        <div class="row flex-column justify-content-flex-end dc-footerCont">
 
             <footer class="p-0">
 
                 <h1 class="text-danger">TEST</h1>
+
+                <div class="dc-logoBig">
+                    <img src="../assets/img/dc-logo-bg.png" alt="">
+                </div>
 
                 <div class="d-flex justify-content-center dc-contacts">
 
@@ -43,13 +47,19 @@ export default {
 
 <style lang="scss" scoped>
 .dc-footerCont {
-    height: 320px;
     background-image: url("../assets/img/footer-bg.jpg");
+    position: relative;
+}
+
+.dc-logoBig {
+    border: 1px solid red;
+    z-index: -1;
 }
 
 .dc-contacts {
     padding: 1.5rem 0;
     background-color: darkgrey;
+    z-index: 10;
 }
 
 .dc-signUpBtn {
