@@ -8,64 +8,79 @@
 
                 <div class="d-flex justify-content-center dc-footerLinks">
 
-                    <div class="col-8 d-flex dc-bigLogo">
+                    <div class="col-8 pt-5 d-flex flex-column flex-wrap align-content-start dc-bigLogo">
 
-                        <div class="dc-listContainer">
+                        <div class="col-2 dc-listContainer" v-for="(element) in footerLinks">
 
-                            <h5 class="text-uppercase text-light">dc comics</h5>
+                            <h5 class="text-uppercase">{{ element.title }}</h5>
 
-                            <ol class="list-unstyled text-light">
-                                <li class="text-capitalize"><a href="#">Character</a></li>
-                                <li class="text-capitalize"><a href="#">Comics</a></li>
-                                <li class="text-capitalize"><a href="#">Movies</a></li>
-                                <li class="text-capitalize"><a href="#">TV</a></li>
-                                <li class="text-capitalize"><a href="#">Games</a></li>
-                                <li class="text-capitalize"><a href="#">Videos</a></li>
-                                <li class="text-capitalize"><a href="#">News</a></li>
-                            </ol>
-
-                            <h5 class="text-uppercase text-light">shop</h5>
-
-                            <ol class="list-unstyled text-light">
-                                <li class="text-capitalize"><a href="#">Shop DC</a></li>
-                                <li class="text-capitalize"><a href="#">Shop DC Collectibles</a></li>
+                            <ol class="list-unstyled">
+                                <li v-for="(link) in element.links" key="index" class="text-capitalize"><a
+                                        :href="link.path">{{ link.text }}</a></li>
                             </ol>
 
                         </div>
 
-                        <div class="dc-listContainer">
+                        <!-- LISTE DEL MENU' SENZA V-FOR-->
 
-                            <h5 class="text-uppercase text-light">dc</h5>
+                        <!--
+                            <div class="dc-listContainer">
 
-                            <ol class="list-unstyled text-light">
-                                <li class="text-capitalize"><a href="#">terms of use</a></li>
-                                <li class="text-capitalize"><a href="#">privacy policy</a></li>
-                                <li class="text-capitalize"><a href="#">ad choices</a></li>
-                                <li class="text-capitalize"><a href="#">advertising</a></li>
-                                <li class="text-capitalize"><a href="#">jobs</a></li>
-                                <li class="text-capitalize"><a href="#">subscriptions</a></li>
-                                <li class="text-capitalize"><a href="#">talent workshops</a></li>
-                                <li class="text-capitalize"><a href="#">CPSC certificates</a></li>
-                                <li class="text-capitalize"><a href="#">ratings</a></li>
-                                <li class="text-capitalize"><a href="#">shop help</a></li>
-                                <li class="text-capitalize"><a href="#">contact us</a></li>
-                            </ol>
+                                <h5 class="text-uppercase">dc comics</h5>
 
-                        </div>
+                                <ol class="list-unstyled">
+                                    <li class="text-capitalize"><a href="#">Character</a></li>
+                                    <li class="text-capitalize"><a href="#">Comics</a></li>
+                                        <li class="text-capitalize"><a href="#">Movies</a></li>
+                                    <li class="text-capitalize"><a href="#">TV</a></li>
+                                        <li class="text-capitalize"><a href="#">Games</a></li>
+                                    <li class="text-capitalize"><a href="#">Videos</a></li>
+                                    <li class="text-capitalize"><a href="#">News</a></li>
+                                </ol>
 
-                        <div class="dc-listContainer">
+                                <h5 class="text-uppercase">shop</h5>
 
-                            <h5 class="text-uppercase text-light">sites</h5>
+                                <ol class="list-unstyled">
+                                    <li class="text-capitalize"><a href="#">Shop DC</a></li>
+                                    <li class="text-capitalize"><a href="#">Shop DC Collectibles</a></li>
+                                </ol>
 
-                            <ol class="list-unstyled text-light">
-                                <li class="text-capitalize"><a href="#">dc</a></li>
-                                <li class="text-capitalize"><a href="#">MAD magazine</a></li>
-                                <li class="text-capitalize"><a href="#">dc kids</a></li>
-                                <li class="text-capitalize"><a href="#">dc universe</a></li>
-                                <li class="text-capitalize"><a href="#">dc power visa</a></li>
-                            </ol>
+                            </div> 
 
-                        </div>
+                            <div class="dc-listContainer">
+
+                                <h5 class="text-uppercase">dc</h5>
+
+                                <ol class="list-unstyled">
+                                    <li class="text-capitalize"><a  href="#">terms of use</a></li>
+                                    <li class="text-capitalize"><a  href="#">privacy policy</a></li>
+                                    <li class="text-capitalize"><a  href="#">ad choices</a></li>
+                                    <li class="text-capitalize"><a  href="#">advertising</a></li>
+                                    <li class="text-capitalize"><a  href="#">jobs</a></li>
+                                    <li class="text-capitalize"><a  href="#">subscriptions</a></li>
+                                    <li class="text-capitalize"><a  href="#">talent workshops</a></li>
+                                    <li class="text-capitalize"><a  href="#">CPSC certificates</a></li>
+                                    <li class="text-capitalize"><a  href="#">ratings</a></li>
+                                    <li class="text-capitalize"><a  href="#">shop help</a></li>
+                                    <li class="text-capitalize"><a  href="#">contact us</a></li>
+                                </ol>
+
+                            </div>
+
+                            <div class="dc-listContainer">
+
+                                <h5 class="text-uppercase">sites</h5>
+
+                                <ol class="list-unstyled">
+                                    <li class="text-capitalize"><a  href="#">dc</a></li>
+                                    <li class="text-capitalize"><a  href="#">MAD magazine</a></li>
+                                    <li class="text-capitalize"><a  href="#">dc kids</a></li>
+                                    <li class="text-capitalize"><a  href="#">dc universe</a></li>
+                                    <li class="text-capitalize"><a  href="#">dc power visa</a></li>
+                                </ol>
+
+                            </div>
+                        -->
 
                     </div>
 
@@ -103,7 +118,151 @@
 <!-- EXPORT & SCRIPTS -->
 <script>
 export default {
-    name: "AppFooter"
+    name: "AppFooter",
+    data() {
+        return {
+
+            footerLinks: [
+
+                {
+                    title: "dc comics",
+                    links: [
+                        {
+                            text: "Character",
+                            path: "#"
+                        },
+
+                        {
+                            text: "Comics",
+                            path: "#"
+                        },
+
+                        {
+                            text: "TV",
+                            path: "#"
+                        },
+
+                        {
+                            text: "Games",
+                            path: "#"
+                        },
+
+                        {
+                            text: "Videos",
+                            path: "#"
+                        },
+
+                        {
+                            text: "News",
+                            path: "#"
+                        }
+                    ]
+                },
+
+                {
+                    title: "shop",
+                    links: [
+                        {
+                            text: "shop dc",
+                            path: "#"
+                        },
+                        {
+                            text: "shop dc collectibles",
+                            path: "#"
+                        }
+                    ]
+                },
+
+                {
+                    title: "dc",
+                    links: [
+                        {
+                            text: "terms of use",
+                            path: "#"
+                        },
+
+                        {
+                            text: "privacy policy",
+                            path: "#"
+                        },
+
+                        {
+                            text: "ad choices",
+                            path: "#"
+                        },
+
+                        {
+                            text: "advertising",
+                            path: "#"
+                        },
+
+                        {
+                            text: "subscriptions",
+                            path: "#"
+                        },
+
+                        {
+                            text: "talent worshops",
+                            path: "#"
+                        },
+
+                        {
+                            text: "CPS certificates",
+                            path: "#"
+                        },
+
+                        {
+                            text: "ratings",
+                            path: "#"
+                        },
+
+                        {
+                            text: "shop help",
+                            path: "#"
+                        },
+
+                        {
+                            text: "contact us",
+                            path: "#"
+                        }
+                    ]
+                },
+
+                {
+                    title: "sites",
+                    links: [
+                        {
+                            text: "dc",
+                            path: "#"
+                        },
+
+                        {
+                            text: "MAD magazine",
+                            path: "#"
+                        },
+
+                        {
+                            text: "dc kids",
+                            path: "#"
+                        },
+
+                        {
+                            text: "dc universe",
+                            path: "#"
+                        },
+
+                        {
+                            text: "dc power visa",
+                            path: "#"
+                        }
+                    ]
+                },
+
+            ]
+
+        }
+
+    }
 }
 </script>
 

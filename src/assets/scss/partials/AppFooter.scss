@@ -6,11 +6,9 @@
 
 }
 
-footer {
-    min-height: 325px;
-}
-
 .dc-footerLinks {
+
+    max-height: 375px;
 
     .dc-bigLogo {
         background-image: url(../assets/img/dc-logo-bg.png);
@@ -19,8 +17,6 @@ footer {
     }
 
     .dc-listContainer {
-
-        padding: 2rem 0;
 
         margin-right: 2rem;
 
@@ -58,3 +54,7 @@ footer {
         font-weight: bold;
     }
 }
+
+/* .dc-listContainer {
+
+} */
