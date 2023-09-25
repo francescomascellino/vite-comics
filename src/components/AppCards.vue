@@ -1,13 +1,13 @@
 <template>
     <div class="card bg-transparent">
 
-        <div class="p-1 dc-coverContainer" :style="{ backgroundImage: `url(${cover})` }">
+        <div class="p-1 dc-coverContainer" :style="{ backgroundImage: `url(${dcCover})` }">
         </div>
 
         <div class="card-body p-0 pt-3">
 
-            <p class="card-title text-uppercase">{{ serie }}</p>
-            <p class="card-text text-capitalize">{{ type }}, price: {{ price }}</p>
+            <p class="card-title text-uppercase">{{ dcSeries }}</p>
+            <p class="card-text text-capitalize">{{ dcType }}, price: {{ dcPrice }}</p>
 
         </div>
 
