@@ -35,11 +35,8 @@
 
                             <h4 class="text-uppercase m-0">follow us</h4>
 
-                            <a href="#" class="ms-3"><img src="../assets/img/footer-facebook.png" alt=""></a>
-                            <a href="#" class="ms-3"><img src="../assets/img/footer-twitter.png" alt=""></a>
-                            <a href="#" class="ms-3"><img src="../assets/img/footer-youtube.png" alt=""></a>
-                            <a href="#" class="ms-3"><img src="../assets/img/footer-pinterest.png" alt=""></a>
-                            <a href="#" class="ms-3"><img src="../assets/img/footer-periscope.png" alt=""></a>
+                            <a :href="link.path" class="ms-3" v-for="link in socialLinks"><img :src="getImageUrl(link.img)"
+                                    :alt="link.name"></a>
 
                         </div>
 
@@ -197,8 +194,49 @@ export default {
                     ]
                 },
 
+            ],
+
+            socialLinks: [
+                {
+                    img: "../assets/img/footer-facebook.png",
+                    name: "facebook",
+                    path: "#"
+                },
+
+                {
+                    img: "../assets/img/footer-twitter.png",
+                    name: "twitter",
+                    path: "#"
+                },
+
+                {
+                    img: "../assets/img/footer-youtube.png",
+                    name: "youtube",
+                    path: "#"
+                },
+
+                {
+                    img: "../assets/img/footer-pinterest.png",
+                    name: "pinterest",
+                    path: "#"
+                },
+
+
+                {
+                    img: "../assets/img/footer-periscope.png",
+                    name: "periscope",
+                    path: "#"
+                },
             ]
 
+        }
+
+    },
+    methods: {
+
+        //PRENDE IL PERCORSO CHE VERRA' LETTO DALL'OGGETTO
+        getImageUrl(path) {
+            return new URL(`${path}`, import.meta.url).href
         }
 
     }
