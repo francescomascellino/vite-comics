@@ -24,7 +24,7 @@
 
                         <a class="nav-link px-4 py-5" href="#">Videos</a>
 
-                        <a class="nav-link px-4 py-5" href="#">Fanse</a>
+                        <a class="nav-link px-4 py-5" href="#">Fans</a>
 
                         <a class="nav-link px-4 py-5" href="#">News</a>
 

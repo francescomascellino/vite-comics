@@ -5,13 +5,13 @@
 @use './partials/variables.scss' as *;
 
 //COMPONENT STYLE LINK
-@use './partials/AppHeader.scss' as *;
+@use './partials/AppHeader.scss';
 
-@use './partials/AppMain.scss' as *;
+@use './partials/AppMain.scss';
 
-@use './partials/AppMenu.scss' as *;
+@use './partials/AppMenu.scss';
 
-@use './partials/AppFooter.scss' as *;
+@use './partials/AppFooter.scss';
 
 // GENERAL RULES
 h1,
