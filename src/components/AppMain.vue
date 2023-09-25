@@ -7,8 +7,6 @@
 
                 <div class="d-flex align-items-center dc-comicCards">
 
-                    <h3 class="fw-bolder">CONTENT GOES HERE</h3>
-
                     <ComicCards />
 
                 </div>
