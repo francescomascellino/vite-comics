@@ -5,9 +5,11 @@
 
             <main class="col-8 p-0">
 
-                <div class="d-flex align-items-center dc-conentToDefine">
+                <div class="d-flex align-items-center dc-comicCards">
 
                     <h3 class="fw-bolder">CONTENT GOES HERE</h3>
+
+                    <ComicCards />
 
                 </div>
 
@@ -20,9 +22,17 @@
 
 <!-- EXPORT & SCRIPTS -->
 <script>
+import ComicCards from './ComicCards.vue';
+
 export default {
-    name: "AppMain"
-}
+    name: "AppMain",
+
+    components: {
+        ComicCards
+    }
+};
+
+
 </script>
 
 <!-- STYLE -->

@@ -23,3 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 dc-comics-empty-layout.png
+dc-comics.png
+dc-comics.json
