@@ -1,0 +1,8 @@
+@use './variables.scss' as *;
+
+.dc-more {
+    background-color: $dc-info;
+    border-radius: 0%;
+    color: $dc-light;
+    font-weight: bold;
+}

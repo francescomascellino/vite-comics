@@ -58,7 +58,10 @@ export default {
                     path: "#"
                 }
 
-            ]
+            ],
+
+            imgUrl: new URL('src/assets/img/buy-comics-digital-comics.png', import.meta.url).href
+
         }
     }
 }
