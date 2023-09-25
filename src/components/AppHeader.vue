@@ -37,10 +37,9 @@
             </div>
 
         </div>
-
         <!-- SPOSTARE IL JUMBOTRON IN UNCOMPONENTE SEPARATO. CONTROLLARE LINK IMG -->
-        <div class="col-12 p-0 dc-jumbotron">
-
+        <div class="row">
+            <div class="col-12 p-0 dc-jumbotron"></div>
         </div>
 
     </div>
