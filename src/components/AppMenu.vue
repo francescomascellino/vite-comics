@@ -8,8 +8,8 @@
 
                 <div class="d-flex align-items-center justify-content-evenly flex-wrap p-4 dcMenuEl">
 
-                    <a :href="link.path" class="text-uppercase m-3" v-for="link in servicesLinks"><img :src="link.img"
-                            alt=""><span class="ms-4">{{ link.text }}</span></a>
+                    <a :href="link.path" class="text-uppercase m-3" v-for="link in servicesLinks"><img
+                            :src="getImageUrl(link.img)" alt=""><span class="ms-4">{{ link.text }}</span></a>
 
                 </div>
 
@@ -30,38 +30,43 @@ export default {
             servicesLinks: [
                 {
                     text: "digital comics",
-                    img: "src/assets/img/buy-comics-digital-comics.png",
+                    img: "../assets/img/buy-comics-digital-comics.png",
                     path: "#"
                 },
 
                 {
                     text: "dc merchandise",
-                    img: "src/assets/img/buy-comics-merchandise.png",
+                    img: "../assets/img/buy-comics-merchandise.png",
                     path: "#"
                 },
 
                 {
                     text: "subscription",
-                    img: "src/assets/img/buy-comics-subscriptions.png",
+                    img: "../assets/img/buy-comics-subscriptions.png",
                     path: "#"
                 },
 
                 {
                     text: "comic shop location",
-                    img: "src/assets/img/buy-comics-shop-locator.png",
+                    img: "../assets/img/buy-comics-shop-locator.png",
                     path: "#"
                 },
 
                 {
                     text: "dc power visa",
-                    img: "src/assets/img/buy-dc-power-visa.svg",
+                    img: "../assets/img/buy-dc-power-visa.svg",
                     path: "#"
                 }
 
             ],
 
-            imgUrl: new URL('src/assets/img/buy-comics-digital-comics.png', import.meta.url).href
+        }
+    },
 
+    methods: {
+        //PRENDE IL PERCORSO CHE VERRRA' LETTO DALL'OGGETTO
+        getImageUrl(path) {
+            return new URL(`${path}`, import.meta.url).href
         }
     }
 }
