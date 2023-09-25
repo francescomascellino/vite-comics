@@ -2,16 +2,16 @@
     <div class="col-8 p-4">
         <div class="row row-cols-6 g-3 ">
 
-            <div class="col-2" v-for="(comic, index) in comics">
+            <div class="col-2" v-for="comic in comics">
                 <div class="card bg-transparent">
 
-                    <div class="dc-coverContainer" :style="{ backgroundImage: `url(${comic.thumb})` }">
+                    <div class="p-1 dc-coverContainer" :style="{ backgroundImage: `url(${comic.thumb})` }">
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body p-0 pt-3">
 
-                        <p class="card-title">{{ comic.series }}</p>
-                        <p class="card-text">{{ comic.type }}</p>
+                        <p class="card-title text-uppercase">{{ comic.series }}</p>
+                        <p class="card-text text-capitalize">{{ comic.type }}, price: {{ comic.price }}</p>
 
                     </div>
                 </div>
@@ -38,20 +38,21 @@ export default {
 // VARIABLES LINK
 @use '../assets/scss/partials/variables.scss' as *;
 
-h6 {
-    color: $dc-light;
-}
-
 .card {
 
     .dc-coverContainer {
         width: 100%;
         aspect-ratio: 1/1;
-
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
-        border: 1px solid rebeccapurple;
+    }
+
+
+    p {
+        color: $dc-light;
+
+        font-size: 0.7rem;
     }
 
 }
