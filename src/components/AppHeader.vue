@@ -10,25 +10,11 @@
 
                     <a class="navbar-brand flex-grow-1" href="#"><img src="../assets/img/dc-logo.png" alt=""></a>
 
-                    <div class="navbar-nav d-flex justify-content-between text-uppercase">
+                    <div class="navbar-nav d-flex justify-content-between text-uppercase" v-for="(link, index) in navLinks">
 
-                        <a class="nav-link px-4 py-5" href="#">Characters</a>
-
-                        <a class="nav-link px-4 py-5" href="#">Movies</a>
-
-                        <a class="nav-link px-4 py-5" href="#">TV</a>
-
-                        <a class="nav-link px-4 py-5" href="#">Games</a>
-
-                        <a class="nav-link px-4 py-5" href="#">Collectibles</a>
-
-                        <a class="nav-link px-4 py-5" href="#">Videos</a>
-
-                        <a class="nav-link px-4 py-5" href="#">Fans</a>
-
-                        <a class="nav-link px-4 py-5" href="#">News</a>
-
-                        <a class="nav-link px-4 py-5" href="#">Shop</a>
+                        <a class="nav-link px-4 py-5" :href="link.path" @click="turnActive(index)"
+                            :class="(index == activeLink ? 'dc-active' : '')">
+                            {{ link.text }}</a>
 
                     </div>
 
@@ -60,8 +46,82 @@
 <script>
 
 export default {
-    name: "AppHeader"
+    name: "AppHeader",
+
+
+    data() {
+
+        return {
+
+            navLinks: [
+
+                {
+                    text: "characters",
+                    path: "#"
+                },
+
+
+                {
+                    text: "comics",
+                    path: "#"
+                },
+
+                {
+                    text: "movies",
+                    path: "#"
+                },
+
+                {
+                    text: "tv",
+                    path: "#"
+                },
+
+                {
+                    text: "games",
+                    path: "#"
+                },
+
+                {
+                    text: "collectibles",
+                    path: "#"
+                },
+
+                {
+                    text: "videos",
+                    path: "#"
+                },
+
+                {
+                    text: "fans",
+                    path: "#"
+                },
+
+                {
+                    text: "news",
+                    path: "#"
+                },
+
+                {
+                    text: "shop",
+                    path: "#"
+                }
+
+
+            ],
+
+            activeLink: 1
+
+        }
+
+    },
+
+    methods: {
+        turnActive(index) {
+            this.activeLink = index
+        }
+    }
 }
+
 
 </script>
 

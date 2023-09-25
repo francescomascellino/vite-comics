@@ -5,10 +5,11 @@
     color: $dc-secondary;
     border-bottom: 5px solid transparent;
 
-    &:hover {
-        color: $dc-info;
-        border-bottom: 5px solid $dc-info;
-    }
+}
+
+.dc-active {
+    color: $dc-info !important;
+    border-bottom: 5px solid $dc-info !important;
 }
 
 .dc-jumbotron {

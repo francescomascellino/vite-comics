@@ -20,6 +20,7 @@
 
 import comics from '../comics.js';
 import AppCards from './AppCards.vue';
+
 export default {
 
     name: "AppCardsContainer",
