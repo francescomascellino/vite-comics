@@ -116,12 +116,14 @@ export default {
     },
 
     methods: {
+
         turnActive(index) {
             this.activeLink = index
         }
-    }
-}
 
+    }
+
+}
 
 </script>
 
