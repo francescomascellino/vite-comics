@@ -23,3 +23,8 @@ h5,
 h6 {
     color: $dc-light;
 }
+
+// HIDES HORIZONTAL SCROLLBAR
+body {
+    overflow-x: hidden;
+}
