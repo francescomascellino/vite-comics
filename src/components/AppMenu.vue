@@ -64,7 +64,7 @@ export default {
     },
 
     methods: {
-        //PRENDE IL PERCORSO CHE VERRRA' LETTO DALL'OGGETTO
+        //PRENDE IL PERCORSO CHE VERRA' LETTO DALL'OGGETTO
         getImageUrl(path) {
             return new URL(`${path}`, import.meta.url).href
         }
