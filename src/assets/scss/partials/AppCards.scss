@@ -1,0 +1,20 @@
+@use './variables.scss' as *;
+
+.card {
+
+    .dc-coverContainer {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    p {
+        color: $dc-light;
+
+        font-size: 0.7rem;
+    }
+
+}

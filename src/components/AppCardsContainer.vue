@@ -2,8 +2,13 @@
     <div class="col-8 p-4">
         <div class="row row-cols-6 g-3 ">
 
-            <div class="col-2" v-for="comic in comics">
-                <div class="card bg-transparent">
+            <div class="col-2" v-for="comic in comics" :dcCover="comic.thumb" :dcSeries="comic.series" :dcType="comic.type"
+                :dcPrice="comic.price">
+
+                <AppCards />
+
+                <!-- CARD  COMPONENT LAYOUT -->
+                <!-- <div class="card bg-transparent">
 
                     <div class="p-1 dc-coverContainer" :style="{ backgroundImage: `url(${comic.thumb})` }">
                     </div>
@@ -14,23 +19,34 @@
                         <p class="card-text text-capitalize">{{ comic.type }}, price: {{ comic.price }}</p>
 
                     </div>
-                </div>
+
+                </div> -->
+
             </div>
 
         </div>
+
     </div>
 </template>
 
 <script>
 
 import comics from '../comics.js';
+import AppCards from './AppCards.vue';
 export default {
-    name: "ComicCards",
+
+    name: "AppCardsContainer",
+
+    components: {
+        AppCards
+    },
+
     data() {
         return {
             comics,
         }
     }
+
 }
 </script>
 

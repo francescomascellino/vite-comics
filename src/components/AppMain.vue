@@ -3,7 +3,7 @@
     <div class="container min-vw-100 dc-mainContainer">
         <main class="row justify-content-center">
 
-            <ComicCards />
+            <AppCardsContainer />
 
         </main>
 
@@ -12,13 +12,13 @@
 
 <!-- EXPORT & SCRIPTS -->
 <script>
-import ComicCards from './ComicCards.vue';
+import AppCardsContainer from './AppCardsContainer.vue';
 
 export default {
     name: "AppMain",
 
     components: {
-        ComicCards
+        AppCardsContainer
     }
 };
 
