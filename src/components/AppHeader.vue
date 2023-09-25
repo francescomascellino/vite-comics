@@ -58,11 +58,4 @@ export default {
 <style lang="scss" scoped>
 // STYLESHEET LINK
 @use '../assets/scss/partials/AppHeader.scss' as *;
-
-.dc-jumbotron {
-    height: 400px;
-    background-image: url(../assets/img/jumbotron.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 </style>

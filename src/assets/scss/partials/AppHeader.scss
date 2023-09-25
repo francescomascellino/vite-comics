@@ -10,3 +10,10 @@
         border-bottom: 5px solid $dc-info;
     }
 }
+
+.dc-jumbotron {
+    height: 400px;
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

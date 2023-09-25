@@ -21,67 +21,6 @@
 
                         </div>
 
-                        <!-- LISTE DEL MENU' SENZA V-FOR-->
-
-                        <!--
-                            <div class="dc-listContainer">
-
-                                <h5 class="text-uppercase">dc comics</h5>
-
-                                <ol class="list-unstyled">
-                                    <li class="text-capitalize"><a href="#">Character</a></li>
-                                    <li class="text-capitalize"><a href="#">Comics</a></li>
-                                        <li class="text-capitalize"><a href="#">Movies</a></li>
-                                    <li class="text-capitalize"><a href="#">TV</a></li>
-                                        <li class="text-capitalize"><a href="#">Games</a></li>
-                                    <li class="text-capitalize"><a href="#">Videos</a></li>
-                                    <li class="text-capitalize"><a href="#">News</a></li>
-                                </ol>
-
-                                <h5 class="text-uppercase">shop</h5>
-
-                                <ol class="list-unstyled">
-                                    <li class="text-capitalize"><a href="#">Shop DC</a></li>
-                                    <li class="text-capitalize"><a href="#">Shop DC Collectibles</a></li>
-                                </ol>
-
-                            </div> 
-
-                            <div class="dc-listContainer">
-
-                                <h5 class="text-uppercase">dc</h5>
-
-                                <ol class="list-unstyled">
-                                    <li class="text-capitalize"><a  href="#">terms of use</a></li>
-                                    <li class="text-capitalize"><a  href="#">privacy policy</a></li>
-                                    <li class="text-capitalize"><a  href="#">ad choices</a></li>
-                                    <li class="text-capitalize"><a  href="#">advertising</a></li>
-                                    <li class="text-capitalize"><a  href="#">jobs</a></li>
-                                    <li class="text-capitalize"><a  href="#">subscriptions</a></li>
-                                    <li class="text-capitalize"><a  href="#">talent workshops</a></li>
-                                    <li class="text-capitalize"><a  href="#">CPSC certificates</a></li>
-                                    <li class="text-capitalize"><a  href="#">ratings</a></li>
-                                    <li class="text-capitalize"><a  href="#">shop help</a></li>
-                                    <li class="text-capitalize"><a  href="#">contact us</a></li>
-                                </ol>
-
-                            </div>
-
-                            <div class="dc-listContainer">
-
-                                <h5 class="text-uppercase">sites</h5>
-
-                                <ol class="list-unstyled">
-                                    <li class="text-capitalize"><a  href="#">dc</a></li>
-                                    <li class="text-capitalize"><a  href="#">MAD magazine</a></li>
-                                    <li class="text-capitalize"><a  href="#">dc kids</a></li>
-                                    <li class="text-capitalize"><a  href="#">dc universe</a></li>
-                                    <li class="text-capitalize"><a  href="#">dc power visa</a></li>
-                                </ol>
-
-                            </div>
-                        -->
-
                     </div>
 
                 </div>

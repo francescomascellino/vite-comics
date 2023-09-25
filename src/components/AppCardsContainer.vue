@@ -6,21 +6,6 @@
 
                 <AppCards :dcCover="comic.thumb" :dcSeries="comic.series" :dcType="comic.type" :dcPrice="comic.price" />
 
-                <!-- CARD  COMPONENT LAYOUT -->
-                <!--                 <div class="card bg-transparent">
-
-                    <div class="p-1 dc-coverContainer" :style="{ backgroundImage: `url(${comic.thumb})` }">
-                    </div>
-
-                    <div class="card-body p-0 pt-3">
-
-                        <p class="card-title text-uppercase">{{ comic.series }}</p>
-                        <p class="card-text text-capitalize">{{ comic.type }}, price: {{ comic.price }}</p>
-
-                    </div>
-
-                </div> -->
-
             </div>
 
         </div>
@@ -42,33 +27,11 @@ export default {
 
     data() {
         return {
-            comics,
+            comics
         }
     }
 
 }
 </script>
 
-<style lang="scss" scoped>
-// VARIABLES LINK
-@use '../assets/scss/partials/variables.scss' as *;
-
-.card {
-
-    .dc-coverContainer {
-        width: 100%;
-        aspect-ratio: 1/1;
-        background-position: top center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-
-    p {
-        color: $dc-light;
-
-        font-size: 0.7rem;
-    }
-
-}
-</style>
+<style lang="scss" scoped></style>
