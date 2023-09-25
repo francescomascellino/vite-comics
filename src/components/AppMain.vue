@@ -1,19 +1,11 @@
 <!-- TEMPLATE -->
 <template>
     <div class="container min-vw-100 dc-mainContainer">
-        <div class="row justify-content-center">
+        <main class="row justify-content-center">
 
-            <main class="col-8 p-0">
+            <ComicCards />
 
-                <div class="d-flex align-items-center dc-comicCards">
-
-                    <ComicCards />
-
-                </div>
-
-            </main>
-
-        </div>
+        </main>
 
     </div>
 </template>
